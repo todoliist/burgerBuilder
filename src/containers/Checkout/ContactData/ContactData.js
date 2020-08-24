@@ -107,6 +107,7 @@ class ContactData extends Component {
             .then(res => {
                 this.setState({ loading: false })
                 this.props.history.push('/')
+                console.log("ordered info stored in firebase: ", this.props)
             })
             .catch(err => {
                 this.setState({ loading: false })
